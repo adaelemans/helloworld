@@ -1,9 +1,10 @@
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-class HelloWorldTest {
+public class HelloWorldTest {
 
-    @org.junit.jupiter.api.Test
-    void one() {
-        assertEquals(2,(new HelloWorld().one()));
+    @org.junit.Test
+    public void one() {
+        HelloWorld myhw = new HelloWorld();
+        assertEquals(1,myhw.one());
     }
 }
